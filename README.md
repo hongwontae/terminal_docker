@@ -120,19 +120,33 @@
 컨테이너 중지
 ![](./screenshot/docker-images/docker-ps-stop.png)
 컨테이너 목록 확인
-
+![](./screenshot/docker-images/docker-container-list.png)
 
 
 ### 3. 운영 : 로그 확인, 리소스 확인
-
+로그 확인
+![](./screenshot/docker-images/docker-logs.png)
+리소스 확인
+![](./screenshot/docker-images/docker-resource.png)
 
 ---
 
 
 # 8. 컨테이너 실행 실습
 ### 1. hello-world 실행 성공을 기록
+![](./screenshot/docker-images/docker-hello-world.png)
+
 ### 2. ubuntu 컨테이너 실행, 간단 명령
+![](./screenshot/docker-images/docker-run-ubuntu.png)
+
 ### 3. 컨테이너 종료/유지(attach, exec)
+컨테이너 생성 및 확인
+![](./screenshot/docker-images/docker-container-ae.png)
+attach 확인
+![](./screenshot/docker-images/docker-attach.png)
+exec 확인
+![](./screenshot/docker-images/docker-exec.png)
+
 
 
 ---
@@ -140,11 +154,78 @@
 
 # 9. 기존 Dockerfile 기반 커스텀 이미지 제작
 
+사전 작업
+![](./screenshot/docker-images/docker-custom-1.png)
+
+Dockerfile에 기재
+```
+FROM ubuntu:24.04
+
+# 패키지 설치
+RUN apt update && \
+    apt install -y vim git curl && \
+    apt clean
+
+# 사용자 생성
+RUN useradd -m student
+
+# 환경변수
+ENV MY_NAME=Hong
+
+# 작업 폴더
+WORKDIR /workspace
+
+CMD ["/bin/bash"]
+```
+
+빌드
+![](./screenshot/docker-images/docker-custom-2.png)
+
+컨테이너 실행
+![](./screenshot/docker-images/docker-custom-3.png)
+
+커스텀 포인트
+![](./screenshot/docker-images/docker-custom-git.png)
+
+![](./screenshot/docker-images/docker-custom-vim.png)
+
+---
+
+
+# 10. Dockerfile 기반 웹 서버 컨테이너
+구조
+![](./screenshot/docker-images/docker-web-server-1.png)
+
+index.html
+![](./screenshot/docker-images/docker-web-server-2.png)
+
+dockerfile
+![](./screenshot/docker-images/docker-web-server-3.png)
+
+build
+![](./screenshot/docker-images/docker-web-server-4.png)
+![](./screenshot/docker-images/docker-web-server-5.png)
+
+컨테이너 만들고 실행 + 포트 매핑
+![](./screenshot/docker-images/docker-web-server-6.png)
+
+최종 결과
+![](./screenshot/docker-images/docker-web-server-7.png)
 
 ---
 
 
 # 10. 포트 매핑 및 접속 증거
+포트 매핑 명령어
+![](./screenshot/docker-images/docker-port-1.png)
+
+브라우저 접속 화면
+![](./screenshot/docker-images/docker-port-2.png)
+
+curl 응답 
+![](./screenshot/docker-images/docker-curl-1.png)
+
+![](./screenshot/docker-images/docker-curl-2.png)
 
 
 ---
