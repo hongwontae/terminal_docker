@@ -104,3 +104,62 @@
 
 # 7. Docker 기본 운영 명령 수행
 
+### 1. 이미지 : 다운로드/목록 확인 (full, images)
+다운로드
+![](./screenshot/docker-images/docker-pull.png)
+이미지 목록 확인
+![](./screenshot/docker-images/docker-images.png)
+
+### 2. 컨테이너 : 생성/실행/중지/목록 확인
+컨테이너 생성
+![](./screenshot/docker-images/docker-create.png)
+컨테이너 실행
+![](./screenshot/docker-images/docker-start.png)
+컨테이너 생성 + 실행
+![](./screenshot/docker-images/docker-run.png)
+컨테이너 중지
+![](./screenshot/docker-images/docker-ps-stop.png)
+컨테이너 목록 확인
+
+
+
+### 3. 운영 : 로그 확인, 리소스 확인
+
+
+---
+
+
+# 8. 컨테이너 실행 실습
+### 1. hello-world 실행 성공을 기록
+### 2. ubuntu 컨테이너 실행, 간단 명령
+### 3. 컨테이너 종료/유지(attach, exec)
+
+
+---
+
+
+# 9. 기존 Dockerfile 기반 커스텀 이미지 제작
+
+
+---
+
+
+# 10. 포트 매핑 및 접속 증거
+
+
+---
+
+
+# 11. Docker 볼륨 영속성 검증
+
+
+---
+
+
+# 12. Git 설정 및 GitHub 연동
+
+
+---
+
+
+# 13. 보안 및 개인정보 보호
