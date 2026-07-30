@@ -215,7 +215,7 @@ build
 ---
 
 
-# 10. 포트 매핑 및 접속 증거
+# 11. 포트 매핑 및 접속 증거
 포트 매핑 명령어
 ![](./screenshot/docker-images/docker-port-1.png)
 
@@ -231,7 +231,34 @@ curl 응답
 ---
 
 
-# 11. Docker 볼륨 영속성 검증
+# 12. Docker 볼륨 영속성 검증
+볼륨 생성
+![](./screenshot/docker-images/docker-volume-1.png)
+
+볼륨 연결
+![](./screenshot/docker-images/docker-volume-2.png)
+
+볼륨에 데이터 추가
+![](./screenshot/docker-images/docker-volume-3.png)
+
+연결했던 컨테이너 삭제
+![](./screenshot/docker-images/docker-volume-4.png)
+
+다른 컨테이너 연결하고 데이터 살아있는지 확인
+![](./screenshot/docker-images/docker-volume-5.png)
+
+
+---
+
+
+# 13. 바인드 마운트
+![](./screenshot/docker-images/docker-bind-mount-1.png)
+![](./screenshot/docker-images/docker-bind-mount-2.png)
+![](./screenshot/docker-images/docker-bind-mount-3.png)
+![](./screenshot/docker-images/docker-bind-mount-4.png)
+![](./screenshot/docker-images/docker-bind-mount-5.png)
+![](./screenshot/docker-images/docker-bind-mount-6.png)
+
 
 
 ---
