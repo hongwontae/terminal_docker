@@ -45,6 +45,7 @@
 ----
 
 
+
 # 4. 터미널 조작 로그
 ### 1. 현재 위치 확인 (pwd)
 ![](./screenshot/terminal-images/pwd.png)
@@ -260,14 +261,55 @@ curl 응답
 ![](./screenshot/docker-images/docker-bind-mount-6.png)
 
 
-
 ---
 
 
 # 12. Git 설정 및 GitHub 연동
+### 1. git 사용자 정보/기본 브랜치 설정을 완료하고 git confg --list 결과
+![](./screenshot/git-images/git-config-1.png)
+
+
+### 2. GitHub 로그인 및 저장소 연동 + SSH 연동
+![](./screenshot/git-images/github-ssh-1.png)
+
+SSH
+![](./screenshot/git-images/github.ssh-2.png)
+
+![](./screenshot/git-images/github-ssh-3.png)
+
+![](./screenshot/git-images/github-ssh-4.png)
+
+연동
+![](./screenshot/git-images/git-github-1.png)
+![](./screenshot/git-images/git-github-2.png)
+![](./screenshot/git-images/git-github-3.png)
+![](./screenshot/git-images/git-github-4.png)
 
 
 ---
 
 
 # 13. 보안 및 개인정보 보호
+
+### 1. Git - GitHub 연동할 때 SSH를 사용
+공개키 암호화 전략
+
+내 컴퓨터에 개인키가 존재하고 GitHub에 공개키를 저장합니다. 그 후 GitHub이 
+
+인증을 하라고 내 컴퓨터 요청을 보냅니다. 그리고 
+
+컴퓨터에서 개인키로 서명을 만들고 GitHub에서 등록된
+
+공개키로 서명이 맞는지 확인합니다. 즉, 여기서 보안을 
+
+위해서는 개인키는 철저히 감춰야 합니다. -> 12에서는 공개키는 보이지만 개인키는 보이지 않습니다.
+
+
+### 2. gitignore
+프로그램을 만들거나 공부하면서 API_Key 같은 정보가 파일 상에 존재할 때가 있습니다.
+
+이 떄 github에 그대로 올리면 악의적인 공격을 받을 수 있습니다.
+
+git -> github으로 commit할 떄 .gitignore을 사용하면 원치 않는 파일을 commit 하지 않아 원하는 파일만 올릴 수 있습니다.
+
+# 14. 트러블 슈팅
