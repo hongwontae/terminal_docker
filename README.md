@@ -237,6 +237,14 @@ curl 응답
 
 ![](./screenshot/docker-images/docker-curl-2.png)
 
+도커 + 포트 매핑
+    
+    1-1. 호스트(내 컴퓨터)에서 컨테이너 내부의 프로그램에 접근할 수 있게 위해서입니다.
+    
+    1-2. 컨테이너는 독립된 네트워크 공간을 가지고 있습니다.
+    
+    1-3. 포트 매핑을 하면 호스트 → Docker가 받아서 전달 → 매핑 확인 → 컨테이너 매핑된 번호로 이동 → 응답 형식입니다.
+
 
 ---
 
@@ -264,10 +272,11 @@ curl 응답
 # 13. 바인드 마운트
 ![](./screenshot/docker-images/docker-bind-mount-1.png)
 ![](./screenshot/docker-images/docker-bind-mount-2.png)
-![](./screenshot/docker-images/docker-bind-mount-3.png)
+
 ![](./screenshot/docker-images/docker-bind-mount-4.png)
-![](./screenshot/docker-images/docker-bind-mount-5.png)
 ![](./screenshot/docker-images/docker-bind-mount-6.png)
+![](./screenshot/docker-images/docker-bind-mount-5.png)
+
 
 
 ---
