@@ -89,6 +89,8 @@
 ![](./screenshot/terminal-images/chmod_file.png)
 ### 3. 폴더 권한 변경 및 확인 (chmod)
 ![](./screenshot/terminal-images/chmod_folder.png)
+### 4. 파일 권한 변경 + 이진수 (421)
+![](./screenshot/terminal-images/chmod-421.png)
 
 
 ---
@@ -97,7 +99,8 @@
 # 6. Docker 설치 및 기본 점검
 ### 1. Docker 버전 확인 결과 (docker --version)
 ![](./screenshot/docker-images/docker_version.png)
-### 2. Docker 데몬 동작 여부 (docker --info)
+### 2. Docker 데몬 동작 여부 (docker info)
+데몬 = 엔진 / Container, images, Server Version
 ![](./screenshot/docker-images/docker_info.png)
 ![](./screenshot/docker-images/docker_info_info.png)
 
@@ -109,10 +112,12 @@
 다운로드
 ![](./screenshot/docker-images/docker-pull.png)
 이미지 목록 확인
+이미지 -> 컨테이너를 만들기 위한 읽기 전용 설계도입니다.
 ![](./screenshot/docker-images/docker-images.png)
 
 ### 2. 컨테이너 : 생성/실행/중지/목록 확인
 컨테이너 생성
+=> 컨테이너는 Image 기반으로 만들어진 실행환경입니다. -> 프로세스
 ![](./screenshot/docker-images/docker-create.png)
 컨테이너 실행
 ![](./screenshot/docker-images/docker-start.png)
