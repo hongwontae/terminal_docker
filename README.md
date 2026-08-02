@@ -164,6 +164,8 @@ exec 확인
 ![](./screenshot/docker-images/docker-custom-1.png)
 
 Dockerfile에 기재
+apt -> 우분투 계열 리눅스 패키지 관리 도구
+
 ```
 FROM ubuntu:24.04
 
@@ -185,6 +187,8 @@ CMD ["/bin/bash"]
 ```
 
 빌드
+-t는 빌드로 생성할 이미지에 이름을 붙이는 것
+.은 경로
 ![](./screenshot/docker-images/docker-custom-2.png)
 
 컨테이너 실행
