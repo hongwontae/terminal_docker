@@ -133,6 +133,7 @@
 로그 확인
 ![](./screenshot/docker-images/docker-logs.png)
 리소스 확인
+docker stats 컨테이너이름
 ![](./screenshot/docker-images/docker-resource.png)
 
 ---
