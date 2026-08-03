@@ -271,6 +271,7 @@ curl 응답
 
 
 # 13. 바인드 마운트
+=> 바인드 마운트 할 떄 nginx 경로는 /usr/share/nginx/html
 ![](./screenshot/docker-images/docker-bind-mount-1.png)
 ![](./screenshot/docker-images/docker-bind-mount-2.png)
 
